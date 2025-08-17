@@ -30,40 +30,50 @@ const PRODUCT_RECOMMENDATIONS = {
 
 const PRODUCTS = {
   'Mobile Phone': [
-    { id: 1, feature: 'Screen Size', type: 'slider', min: 5.0, max: 7.0, step: 0.1, unit: 'inches', defaultValue: 6.1 },
-    { id: 2, feature: 'Battery Size', type: 'slider', min: 2000, max: 6000, step: 100, unit: 'mAh', defaultValue: 4000 },
-    { id: 3, feature: 'Operating System', type: 'select', options: ['Android 14', 'iOS 17', 'Android 13', 'iOS 16'], defaultValue: 'Android 14' },
-    { id: 4, feature: 'Camera Quality', type: 'slider', min: 12, max: 200, step: 1, unit: 'MP', defaultValue: 50 },
-    { id: 5, feature: 'Storage Space', type: 'select', options: ['64 GB', '128 GB', '256 GB', '512 GB', '1 TB'], defaultValue: '256 GB' },
-    { id: 6, feature: 'RAM', type: 'slider', min: 4, max: 16, step: 1, unit: 'GB', defaultValue: 8 },
-    { id: 7, feature: 'Processor Speed', type: 'select', options: ['Snapdragon 8 Gen 3', 'A17 Pro', 'Snapdragon 8 Gen 2', 'MediaTek Dimensity 9300'], defaultValue: 'Snapdragon 8 Gen 3' },
-    { id: 8, feature: 'Water Resistance', type: 'checkbox', options: ['IP68', 'IP67', 'IP65', 'No Rating'], defaultValue: ['IP68'] }
+    { id: 1, feature: 'Screen Size', type: 'slider', min: 5.0, max: 7.0, step: 0.1, unit: 'inches', defaultValue: 6.1, explanation: 'Larger screens are great for videos and gaming, but make the phone bulkier and harder to use with one hand.' },
+    { id: 2, feature: 'Battery Size', type: 'slider', min: 2000, max: 6000, step: 100, unit: 'mAh', defaultValue: 4000, explanation: 'Higher capacity means longer usage time, but increases phone weight and thickness.' },
+    { id: 3, feature: 'Operating System', type: 'select', options: ['Android 14', 'iOS 17', 'Android 13', 'iOS 16'], defaultValue: 'Android 14', explanation: 'iOS offers seamless Apple ecosystem integration, while Android provides more customization and app flexibility.' },
+    { id: 4, feature: 'Camera Quality', type: 'slider', min: 12, max: 200, step: 1, unit: 'MP', defaultValue: 50, explanation: 'Higher megapixels capture more detail for photos, but use more storage space and processing power.' },
+    { id: 5, feature: 'Storage Space', type: 'select', options: ['64 GB', '128 GB', '256 GB', '512 GB', '1 TB'], defaultValue: '256 GB', explanation: 'More storage allows for more apps, photos, and videos, but significantly increases the price.' },
+    { id: 6, feature: 'RAM', type: 'slider', min: 4, max: 16, step: 1, unit: 'GB', defaultValue: 8, explanation: 'More RAM enables smoother multitasking and faster app switching, but drains battery faster.' },
+    { id: 7, feature: 'Processor Speed', type: 'select', options: ['Snapdragon 8 Gen 3', 'A17 Pro', 'Snapdragon 8 Gen 2', 'MediaTek Dimensity 9300'], defaultValue: 'Snapdragon 8 Gen 3', explanation: 'Faster processors improve gaming and app performance, but may generate more heat and use more battery.' },
+    { id: 8, feature: 'Water Resistance', type: 'checkbox', options: ['IP68', 'IP67', 'IP65', 'No Rating'], defaultValue: ['IP68'], explanation: 'Higher ratings protect against water damage during accidents, but may require thicker seals affecting design.' }
   ],
   'Washing Machine': [
-    { id: 1, feature: 'Load Capacity', type: 'slider', min: 5, max: 15, step: 0.5, unit: 'kg', defaultValue: 8 },
-    { id: 2, feature: 'Energy Rating', type: 'select', options: ['5 Star', '4 Star', '3 Star', '2 Star', '1 Star'], defaultValue: '5 Star' },
-    { id: 3, feature: 'Wash Programs', type: 'slider', min: 5, max: 20, step: 1, unit: 'programs', defaultValue: 12 },
-    { id: 4, feature: 'Spin Speed', type: 'slider', min: 800, max: 1600, step: 100, unit: 'RPM', defaultValue: 1200 },
-    { id: 5, feature: 'Smart Features', type: 'checkbox', options: ['WiFi Control', 'App Integration', 'Voice Control', 'Auto Detergent'], defaultValue: ['WiFi Control'] },
-    { id: 6, feature: 'Quick Wash', type: 'slider', min: 10, max: 60, step: 5, unit: 'minutes', defaultValue: 15 },
-    { id: 7, feature: 'Steam Function', type: 'checkbox', options: ['Steam Cleaning', 'Steam Refresh', 'Allergy Care'], defaultValue: ['Steam Cleaning'] },
-    { id: 8, feature: 'Child Lock', type: 'checkbox', options: ['Control Lock', 'Door Lock', 'Display Lock'], defaultValue: ['Control Lock'] }
+    { id: 1, feature: 'Load Capacity', type: 'slider', min: 5, max: 15, step: 0.5, unit: 'kg', defaultValue: 8, explanation: 'Larger capacity handles more clothes per load, saving time and energy, but requires more space and costs more.' },
+    { id: 2, feature: 'Energy Rating', type: 'select', options: ['5 Star', '4 Star', '3 Star', '2 Star', '1 Star'], defaultValue: '5 Star', explanation: 'Higher ratings significantly reduce electricity bills over time, but machines cost more upfront.' },
+    { id: 3, feature: 'Wash Programs', type: 'slider', min: 5, max: 20, step: 1, unit: 'programs', defaultValue: 12, explanation: 'More programs provide better care for different fabric types, but can make the interface more complex to use.' },
+    { id: 4, feature: 'Spin Speed', type: 'slider', min: 800, max: 1600, step: 100, unit: 'RPM', defaultValue: 1200, explanation: 'Higher spin speeds remove more water, reducing drying time, but may cause more wrinkles and wear on clothes.' },
+    { id: 5, feature: 'Smart Features', type: 'checkbox', options: ['WiFi Control', 'App Integration', 'Voice Control', 'Auto Detergent'], defaultValue: ['WiFi Control'], explanation: 'Smart features offer convenience and remote monitoring, but add complexity and potential technical issues.' },
+    { id: 6, feature: 'Quick Wash', type: 'slider', min: 10, max: 60, step: 5, unit: 'minutes', defaultValue: 15, explanation: 'Faster cycles save time for lightly soiled items, but may not clean heavily soiled clothes as effectively.' },
+    { id: 7, feature: 'Steam Function', type: 'checkbox', options: ['Steam Cleaning', 'Steam Refresh', 'Allergy Care'], defaultValue: ['Steam Cleaning'], explanation: 'Steam reduces wrinkles and sanitizes clothes, but uses more water and energy per cycle.' },
+    { id: 8, feature: 'Child Lock', type: 'checkbox', options: ['Control Lock', 'Door Lock', 'Display Lock'], defaultValue: ['Control Lock'], explanation: 'Safety locks prevent accidents with children around, but can be inconvenient when you need quick access.' }
   ],
   'Mobile Charger': [
-    { id: 1, feature: 'Charging Speed', type: 'slider', min: 10, max: 100, step: 5, unit: 'W', defaultValue: 65 },
-    { id: 2, feature: 'Cable Length', type: 'slider', min: 0.5, max: 3.0, step: 0.5, unit: 'meters', defaultValue: 2.0 },
-    { id: 3, feature: 'Port Count', type: 'slider', min: 1, max: 6, step: 1, unit: 'ports', defaultValue: 3 },
-    { id: 4, feature: 'Safety Features', type: 'checkbox', options: ['Overcharge Protection', 'Short Circuit Protection', 'Temperature Control', 'Surge Protection'], defaultValue: ['Overcharge Protection'] },
-    { id: 5, feature: 'Compatibility', type: 'checkbox', options: ['USB-C', 'Lightning', 'Micro USB', 'Qi Wireless'], defaultValue: ['USB-C'] },
-    { id: 6, feature: 'Size & Weight', type: 'select', options: ['Ultra Compact', 'Compact', 'Standard', 'Large'], defaultValue: 'Compact' },
-    { id: 7, feature: 'Wireless Charging', type: 'slider', min: 0, max: 25, step: 5, unit: 'W', defaultValue: 15 },
-    { id: 8, feature: 'LED Indicator', type: 'checkbox', options: ['Charging Status', 'Power Status', 'Error Indicator'], defaultValue: ['Charging Status'] }
+    { id: 1, feature: 'Charging Speed', type: 'slider', min: 10, max: 100, step: 5, unit: 'W', defaultValue: 65, explanation: 'Higher wattage charges devices much faster, but generates more heat and may reduce battery lifespan over time.' },
+    { id: 2, feature: 'Cable Length', type: 'slider', min: 0.5, max: 3.0, step: 0.5, unit: 'meters', defaultValue: 2.0, explanation: 'Longer cables offer more flexibility in placement, but may be bulkier to carry and have slightly slower charging.' },
+    { id: 3, feature: 'Port Count', type: 'slider', min: 1, max: 6, step: 1, unit: 'ports', defaultValue: 3, explanation: 'More ports allow charging multiple devices simultaneously, but increase size, weight, and cost.' },
+    { id: 4, feature: 'Safety Features', type: 'checkbox', options: ['Overcharge Protection', 'Short Circuit Protection', 'Temperature Control', 'Surge Protection'], defaultValue: ['Overcharge Protection'], explanation: 'Safety features protect your devices from damage, but add cost and may slightly reduce charging efficiency.' },
+    { id: 5, feature: 'Compatibility', type: 'checkbox', options: ['USB-C', 'Lightning', 'Micro USB', 'Qi Wireless'], defaultValue: ['USB-C'], explanation: 'More connector types work with more devices, but increase charger complexity and cost.' },
+    { id: 6, feature: 'Size & Weight', type: 'select', options: ['Ultra Compact', 'Compact', 'Standard', 'Large'], defaultValue: 'Compact', explanation: 'Smaller chargers are more portable, but typically offer lower power output and fewer ports.' },
+    { id: 7, feature: 'Wireless Charging', type: 'slider', min: 0, max: 25, step: 5, unit: 'W', defaultValue: 15, explanation: 'Wireless charging adds convenience, but is less efficient than wired charging and generates more heat.' },
+    { id: 8, feature: 'LED Indicator', type: 'checkbox', options: ['Charging Status', 'Power Status', 'Error Indicator'], defaultValue: ['Charging Status'], explanation: 'LED indicators provide useful status information, but may be distracting in dark environments.' }
   ]
 };
 
+// Function to shuffle array randomly - moved outside component to avoid initialization issues
+const shuffleArray = (array) => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 function App() {
-  const [currentScreen, setCurrentScreen] = useState('selection');
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [currentScreen, setCurrentScreen] = useState('features');
+  const [selectedProduct, setSelectedProduct] = useState('Mobile Phone');
   const [currentFeatureIndex, setCurrentFeatureIndex] = useState(0);
   const [categorizedFeatures, setCategorizedFeatures] = useState({
     important: [],
@@ -74,23 +84,40 @@ function App() {
   const [swipeOrder, setSwipeOrder] = useState(0); // Track order of swipes
   const [selectedFeatureDetail, setSelectedFeatureDetail] = useState(null);
   const [featureValues, setFeatureValues] = useState({}); // Store user's feature preferences
-  const [shuffledProducts, setShuffledProducts] = useState([]);
-
-  // Function to shuffle array randomly
-  const shuffleArray = (array) => {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-  };
+  const [shuffledProducts, setShuffledProducts] = useState(() => {
+    return shuffleArray(PRODUCT_RECOMMENDATIONS['Mobile Phone'] || []);
+  });
+  const [searchQuery, setSearchQuery] = useState('Mobile Phone');
 
   // Function to reshuffle products
   const reshuffleProducts = () => {
     if (selectedProduct && PRODUCT_RECOMMENDATIONS[selectedProduct]) {
       const shuffled = shuffleArray(PRODUCT_RECOMMENDATIONS[selectedProduct]);
       setShuffledProducts(shuffled);
+    }
+  };
+
+  // Function to handle search and product change
+  const handleSearchChange = (query) => {
+    setSearchQuery(query);
+    
+    // Check if the query matches any existing product
+    const matchedProduct = Object.keys(PRODUCTS).find(
+      product => product.toLowerCase().includes(query.toLowerCase())
+    );
+    
+    if (matchedProduct && matchedProduct !== selectedProduct) {
+      setSelectedProduct(matchedProduct);
+      setCurrentFeatureIndex(0);
+      setCategorizedFeatures({ important: [], notImportant: [], dontCare: [] });
+      setSwipeOrder(0);
+      setFeatureValues({});
+      
+      // Initialize shuffled products for new category
+      if (PRODUCT_RECOMMENDATIONS[matchedProduct]) {
+        const shuffled = shuffleArray(PRODUCT_RECOMMENDATIONS[matchedProduct]);
+        setShuffledProducts(shuffled);
+      }
     }
   };
 
@@ -174,35 +201,6 @@ function App() {
     setShuffledProducts([]);
   };
 
-  if (currentScreen === 'selection') {
-    return (
-      <div className="App">
-        <div className="selection-screen">
-          <div className="app-header">
-            <img 
-              className="app-logo" 
-              src="https://cdn.heureka.group/fe/hasty-images/latest/brand/heureka-cz/logo.svg" 
-              alt="Heureka.cz — Vybírejte úžasně!"
-            />
-            <h2 className="app-title">Shopping Assistant</h2>
-          </div>
-          <h1>Select a Product</h1>
-          <p>Choose the product you want to purchase:</p>
-          <div className="product-list">
-            {Object.keys(PRODUCTS).map((product) => (
-              <button
-                key={product}
-                className="product-button"
-                onClick={() => handleProductSelect(product)}
-              >
-                {product}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   if (currentScreen === 'features') {
     const currentFeature = PRODUCTS[selectedProduct][currentFeatureIndex];
@@ -211,9 +209,29 @@ function App() {
     return (
       <div className="App">
         <div className="features-screen">
+          <div className="app-header-small">
+            <img 
+              className="app-logo-small" 
+              src="https://cdn.heureka.group/fe/hasty-images/latest/brand/heureka-cz/logo.svg" 
+              alt="Heureka.cz — Vybírejte úžasně!"
+            />
+            <h3 className="app-title-small">Shopping Assistant</h3>
+            <input
+              type="text"
+              placeholder="Search product..."
+              value={searchQuery}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              className="search-field"
+              list="product-categories"
+            />
+            <datalist id="product-categories">
+              {Object.keys(PRODUCTS).map((product) => (
+                <option key={product} value={product} />
+              ))}
+            </datalist>
+          </div>
           <div className="header">
             <h2>{selectedProduct}</h2>
-            <p>Feature {currentFeatureIndex + 1} of {totalFeatures}</p>
           </div>
 
           {/* Show current feature card only if not animating or show animating card */}
@@ -221,6 +239,7 @@ function App() {
             <FeatureCard
               feature={currentFeature}
               onSwipe={handleSwipe}
+              onFeatureClick={handleFeatureClick}
             />
           )}
 
@@ -229,6 +248,7 @@ function App() {
             <FeatureCard
               feature={animatingFeature.feature}
               onSwipe={handleSwipe}
+              onFeatureClick={handleFeatureClick}
               isAnimating={true}
               animationDirection={animatingFeature.direction}
             />
@@ -247,11 +267,15 @@ function App() {
               <span className="arrow">↓</span>
               <span>Don't Care</span>
             </div>
+            <div className="instruction">
+              <span className="arrow">👆</span>
+              <span>Tap to set value</span>
+            </div>
           </div>
 
           <div className="categorized-preview">
             <div className="category important">
-              <h4>Important ({categorizedFeatures.important.length})</h4>
+              <h4>Important</h4>
               <div className="mini-features">
                 {categorizedFeatures.important
                   .sort((a, b) => a.swipeOrder - b.swipeOrder)
@@ -267,7 +291,7 @@ function App() {
               </div>
             </div>
             <div className="category dont-care">
-              <h4>Don't Care ({categorizedFeatures.dontCare.length})</h4>
+              <h4>Don't Care</h4>
               <div className="mini-features">
                 {categorizedFeatures.dontCare
                   .sort((a, b) => a.swipeOrder - b.swipeOrder)
@@ -283,7 +307,7 @@ function App() {
               </div>
             </div>
             <div className="category not-important">
-              <h4>Not Important ({categorizedFeatures.notImportant.length})</h4>
+              <h4>Not Important</h4>
               <div className="mini-features">
                 {categorizedFeatures.notImportant
                   .sort((a, b) => a.swipeOrder - b.swipeOrder)
@@ -479,6 +503,11 @@ function FeatureDetailModal({ feature, currentValue, onValueChange, onClose }) {
           <button className="close-button" onClick={onClose}>×</button>
         </div>
         <div className="modal-body">
+          {feature.explanation && (
+            <div className="feature-explanation">
+              <p>{feature.explanation}</p>
+            </div>
+          )}
           {renderControl()}
         </div>
         <div className="modal-footer">
@@ -490,7 +519,7 @@ function FeatureDetailModal({ feature, currentValue, onValueChange, onClose }) {
   );
 }
 
-function FeatureCard({ feature, onSwipe, isAnimating = false, animationDirection = null }) {
+function FeatureCard({ feature, onSwipe, onFeatureClick, isAnimating = false, animationDirection = null }) {
   const [startTouch, setStartTouch] = useState(null);
   const [currentTransform, setCurrentTransform] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -542,13 +571,22 @@ function FeatureCard({ feature, onSwipe, isAnimating = false, animationDirection
         if (Math.abs(deltaX) > threshold) {
           const direction = deltaX > 0 ? 'right' : 'left';
           onSwipe(direction);
+        } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
+          // Small movement, treat as tap
+          onFeatureClick && onFeatureClick(feature);
         }
       } else {
         // Vertical swipe
         if (deltaY > threshold) {
           onSwipe('down');
+        } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
+          // Small movement, treat as tap
+          onFeatureClick && onFeatureClick(feature);
         }
       }
+    } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
+      // Long press or tap with minimal movement
+      onFeatureClick && onFeatureClick(feature);
     }
 
     // Reset state
@@ -599,12 +637,21 @@ function FeatureCard({ feature, onSwipe, isAnimating = false, animationDirection
           } else {
             onSwipe('left');
           }
+        } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
+          // Small movement, treat as click
+          onFeatureClick && onFeatureClick(feature);
         }
       } else {
         if (deltaY > threshold) {
           onSwipe('down');
+        } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
+          // Small movement, treat as click
+          onFeatureClick && onFeatureClick(feature);
         }
       }
+    } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
+      // Long press or click with minimal movement
+      onFeatureClick && onFeatureClick(feature);
     }
 
     setStartTouch(null);
@@ -659,6 +706,9 @@ function FeatureCard({ feature, onSwipe, isAnimating = false, animationDirection
       onMouseLeave={handleMouseUp}
     >
       <h3>{feature.feature}</h3>
+      {feature.explanation && (
+        <p className="feature-card-explanation">{feature.explanation}</p>
+      )}
       {isDragging && swipeDirection && !isAnimating && (
         <div className="swipe-indicator">
           {swipeDirection === 'left' && '👍 Important'}
