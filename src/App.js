@@ -121,16 +121,6 @@ function App() {
     }
   };
 
-  const handleProductSelect = (product) => {
-    setSelectedProduct(product);
-    setCurrentScreen('features');
-    setCurrentFeatureIndex(0);
-    setCategorizedFeatures({ important: [], notImportant: [], dontCare: [] });
-    setSwipeOrder(0);
-    // Initialize shuffled products
-    const shuffled = shuffleArray(PRODUCT_RECOMMENDATIONS[product]);
-    setShuffledProducts(shuffled);
-  };
 
   const handleSwipe = (direction) => {
     const currentFeature = PRODUCTS[selectedProduct][currentFeatureIndex];
@@ -204,7 +194,6 @@ function App() {
 
   if (currentScreen === 'features') {
     const currentFeature = PRODUCTS[selectedProduct][currentFeatureIndex];
-    const totalFeatures = PRODUCTS[selectedProduct].length;
 
     return (
       <div className="App">
