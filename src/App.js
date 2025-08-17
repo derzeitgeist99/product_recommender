@@ -145,10 +145,6 @@ function App() {
     }, 100); // Very fast transition for all swipes
   };
 
-  const handleDone = () => {
-    setCurrentScreen('results');
-  };
-
   const handleFeatureClick = (feature) => {
     setSelectedFeatureDetail(feature);
   };
