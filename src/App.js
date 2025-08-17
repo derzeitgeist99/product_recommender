@@ -3,28 +3,28 @@ import './App.css';
 
 const PRODUCT_RECOMMENDATIONS = {
   'Mobile Phone': [
-    { id: 1, name: 'iPhone 15 Pro', price: '$999', image: '📱', rating: 4.8, specs: ['6.1" Display', '5000mAh', '128GB'] },
-    { id: 2, name: 'Samsung Galaxy S24', price: '$899', image: '📱', rating: 4.7, specs: ['6.2" Display', '4500mAh', '256GB'] },
-    { id: 3, name: 'Google Pixel 8', price: '$699', image: '📱', rating: 4.6, specs: ['6.0" Display', '4000mAh', '128GB'] },
-    { id: 4, name: 'OnePlus 12', price: '$799', image: '📱', rating: 4.5, specs: ['6.8" Display', '5400mAh', '256GB'] },
-    { id: 5, name: 'Xiaomi 14 Ultra', price: '$649', image: '📱', rating: 4.4, specs: ['6.7" Display', '5300mAh', '512GB'] },
-    { id: 6, name: 'iPhone 15', price: '$799', image: '📱', rating: 4.7, specs: ['6.1" Display', '3877mAh', '128GB'] }
+    { id: 1, name: 'iPhone 15 Pro', price: '$999', image: '📱', rating: 4.8, specs: ['6.1" Display', '5000mAh', 'iOS 17', '48MP Camera', '128GB', '8GB RAM', 'A17 Pro', 'IP68'] },
+    { id: 2, name: 'Samsung Galaxy S24', price: '$899', image: '📱', rating: 4.7, specs: ['6.2" Display', '4500mAh', 'Android 14', '50MP Camera', '256GB', '12GB RAM', 'Snapdragon 8 Gen 3', 'IP68'] },
+    { id: 3, name: 'Google Pixel 8', price: '$699', image: '📱', rating: 4.6, specs: ['6.0" Display', '4000mAh', 'Android 14', '50MP Camera', '128GB', '8GB RAM', 'Google Tensor G3', 'IP68'] },
+    { id: 4, name: 'OnePlus 12', price: '$799', image: '📱', rating: 4.5, specs: ['6.8" Display', '5400mAh', 'Android 14', '50MP Camera', '256GB', '16GB RAM', 'Snapdragon 8 Gen 3', 'IP65'] },
+    { id: 5, name: 'Xiaomi 14 Ultra', price: '$649', image: '📱', rating: 4.4, specs: ['6.7" Display', '5300mAh', 'Android 14', '50MP Camera', '512GB', '16GB RAM', 'Snapdragon 8 Gen 3', 'IP68'] },
+    { id: 6, name: 'iPhone 15', price: '$799', image: '📱', rating: 4.7, specs: ['6.1" Display', '3877mAh', 'iOS 17', '48MP Camera', '128GB', '6GB RAM', 'A16 Bionic', 'IP68'] }
   ],
   'Washing Machine': [
-    { id: 1, name: 'LG WM3900HWA', price: '$899', image: '🧺', rating: 4.5, specs: ['4.5 cu ft', '5 Star', '12 Programs'] },
-    { id: 2, name: 'Samsung WF45R6100', price: '$749', image: '🧺', rating: 4.3, specs: ['4.5 cu ft', '4 Star', '10 Programs'] },
-    { id: 3, name: 'Whirlpool WTW7120HW', price: '$699', image: '🧺', rating: 4.4, specs: ['5.0 cu ft', '4 Star', '8 Programs'] },
-    { id: 4, name: 'GE GFW650SSNWW', price: '$849', image: '🧺', rating: 4.2, specs: ['4.8 cu ft', '5 Star', '14 Programs'] },
-    { id: 5, name: 'Maytag MVWC465HW', price: '$599', image: '🧺', rating: 4.1, specs: ['4.2 cu ft', '3 Star', '11 Programs'] },
-    { id: 6, name: 'Bosch WAW285H2UC', price: '$1299', image: '🧺', rating: 4.6, specs: ['2.2 cu ft', '5 Star', '15 Programs'] }
+    { id: 1, name: 'LG WM3900HWA', price: '$899', image: '🧺', rating: 4.5, specs: ['4.5 cu ft', '5 Star', '12 Programs', '1200 RPM', 'WiFi Control', '15 min Quick', 'Steam Clean', 'Child Lock'] },
+    { id: 2, name: 'Samsung WF45R6100', price: '$749', image: '🧺', rating: 4.3, specs: ['4.5 cu ft', '4 Star', '10 Programs', '1200 RPM', 'App Control', '30 min Quick', 'Steam Refresh', 'Door Lock'] },
+    { id: 3, name: 'Whirlpool WTW7120HW', price: '$699', image: '🧺', rating: 4.4, specs: ['5.0 cu ft', '4 Star', '8 Programs', '850 RPM', 'Basic Control', '45 min Quick', 'No Steam', 'Control Lock'] },
+    { id: 4, name: 'GE GFW650SSNWW', price: '$849', image: '🧺', rating: 4.2, specs: ['4.8 cu ft', '5 Star', '14 Programs', '1300 RPM', 'WiFi + Voice', '20 min Quick', 'Steam + Allergy', 'Full Lock'] },
+    { id: 5, name: 'Maytag MVWC465HW', price: '$599', image: '🧺', rating: 4.1, specs: ['4.2 cu ft', '3 Star', '11 Programs', '900 RPM', 'Basic Control', '35 min Quick', 'Steam Refresh', 'Child Lock'] },
+    { id: 6, name: 'Bosch WAW285H2UC', price: '$1299', image: '🧺', rating: 4.6, specs: ['2.2 cu ft', '5 Star', '15 Programs', '1600 RPM', 'WiFi + App', '15 min Quick', 'Steam + Allergy', 'Full Lock'] }
   ],
   'Mobile Charger': [
-    { id: 1, name: 'Anker PowerPort III', price: '$39', image: '🔌', rating: 4.7, specs: ['65W', '3 Ports', 'USB-C'] },
-    { id: 2, name: 'Belkin 3-in-1 Wireless', price: '$149', image: '🔌', rating: 4.5, specs: ['15W Wireless', '2 Ports', 'MagSafe'] },
-    { id: 3, name: 'UGREEN Nexode 100W', price: '$79', image: '🔌', rating: 4.6, specs: ['100W', '4 Ports', 'GaN Tech'] },
-    { id: 4, name: 'Apple MagSafe Charger', price: '$39', image: '🔌', rating: 4.4, specs: ['15W Wireless', '1 Port', 'MagSafe'] },
-    { id: 5, name: 'RAVPower 65W GaN', price: '$49', image: '🔌', rating: 4.3, specs: ['65W', '2 Ports', 'Compact'] },
-    { id: 6, name: 'Aukey Omnia 100W', price: '$69', image: '🔌', rating: 4.5, specs: ['100W', '4 Ports', 'PD 3.0'] }
+    { id: 1, name: 'Anker PowerPort III', price: '$39', image: '🔌', rating: 4.7, specs: ['65W', '2m Cable', '3 Ports', 'Overcharge Protection', 'USB-C + Lightning', 'Compact', '0W Wireless', 'LED Status'] },
+    { id: 2, name: 'Belkin 3-in-1 Wireless', price: '$149', image: '🔌', rating: 4.5, specs: ['45W', '1.5m Cable', '2 Ports', 'Temperature Control', 'MagSafe + USB-C', 'Standard', '15W Wireless', 'LED Charging'] },
+    { id: 3, name: 'UGREEN Nexode 100W', price: '$79', image: '🔌', rating: 4.6, specs: ['100W', '2m Cable', '4 Ports', 'Full Protection', 'USB-C + PD', 'Large', '0W Wireless', 'Power LED'] },
+    { id: 4, name: 'Apple MagSafe Charger', price: '$39', image: '🔌', rating: 4.4, specs: ['20W', '1m Cable', '1 Port', 'MagSafe Protection', 'Lightning Only', 'Ultra Compact', '15W Wireless', 'No LED'] },
+    { id: 5, name: 'RAVPower 65W GaN', price: '$49', image: '🔌', rating: 4.3, specs: ['65W', '1.5m Cable', '2 Ports', 'GaN Protection', 'USB-C', 'Compact', '0W Wireless', 'Charging LED'] },
+    { id: 6, name: 'Aukey Omnia 100W', price: '$69', image: '🔌', rating: 4.5, specs: ['100W', '2m Cable', '4 Ports', 'Surge Protection', 'USB-C + PD 3.0', 'Large', '0W Wireless', 'Status LED'] }
   ]
 };
 
@@ -77,8 +77,7 @@ function App() {
   const [currentFeatureIndex, setCurrentFeatureIndex] = useState(0);
   const [categorizedFeatures, setCategorizedFeatures] = useState({
     important: [],
-    notImportant: [],
-    dontCare: []
+    notImportant: []
   });
   const [animatingFeature, setAnimatingFeature] = useState(null);
   const [swipeOrder, setSwipeOrder] = useState(0); // Track order of swipes
@@ -88,6 +87,8 @@ function App() {
     return shuffleArray(PRODUCT_RECOMMENDATIONS['Mobile Phone'] || []);
   });
   const [searchQuery, setSearchQuery] = useState('Mobile Phone');
+  const [draggedFeature, setDraggedFeature] = useState(null);
+  const [dragOverColumn, setDragOverColumn] = useState(null);
 
   // Function to reshuffle products
   const reshuffleProducts = () => {
@@ -109,7 +110,7 @@ function App() {
     if (matchedProduct && matchedProduct !== selectedProduct) {
       setSelectedProduct(matchedProduct);
       setCurrentFeatureIndex(0);
-      setCategorizedFeatures({ important: [], notImportant: [], dontCare: [] });
+      setCategorizedFeatures({ important: [], notImportant: [] });
       setSwipeOrder(0);
       setFeatureValues({});
       
@@ -141,8 +142,6 @@ function App() {
       newCategorized.important.push(featureWithOrder);
     } else if (direction === 'right') {
       newCategorized.notImportant.push(featureWithOrder);
-    } else if (direction === 'down') {
-      newCategorized.dontCare.push(featureWithOrder);
     }
     setCategorizedFeatures(newCategorized);
     setSwipeOrder(swipeOrder + 1); // Increment swipe order
@@ -179,11 +178,75 @@ function App() {
     reshuffleProducts();
   };
 
+  // Drag and drop handlers
+  const handleDragStart = (e, feature, sourceColumn) => {
+    console.log('Drag started:', feature.feature, 'from', sourceColumn);
+    setDraggedFeature({ ...feature, sourceColumn });
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', ''); // Required for some browsers
+  };
+
+  const handleDragOver = (e, targetColumn) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    setDragOverColumn(targetColumn);
+  };
+
+  const handleDragLeave = (e) => {
+    // Only clear drag over if leaving the column container
+    if (!e.currentTarget.contains(e.relatedTarget)) {
+      setDragOverColumn(null);
+    }
+  };
+
+  const handleDrop = (e, targetColumn, targetIndex = null) => {
+    e.preventDefault();
+    setDragOverColumn(null);
+    console.log('Drop detected:', targetColumn, draggedFeature);
+    
+    if (!draggedFeature) {
+      console.log('No dragged feature found');
+      return;
+    }
+
+    const newCategorized = { ...categorizedFeatures };
+    const sourceColumn = draggedFeature.sourceColumn;
+    
+    // Remove from source column
+    newCategorized[sourceColumn] = newCategorized[sourceColumn].filter(
+      f => f.id !== draggedFeature.id || f.swipeOrder !== draggedFeature.swipeOrder
+    );
+    
+    // Add to target column
+    if (targetIndex !== null) {
+      // Insert at specific position
+      newCategorized[targetColumn].splice(targetIndex, 0, draggedFeature);
+    } else {
+      // Add to end
+      newCategorized[targetColumn].push(draggedFeature);
+    }
+    
+    // Update swipe order for all features to maintain chronological order
+    let newSwipeOrder = 0;
+    ['important', 'notImportant'].forEach(column => {
+      newCategorized[column] = newCategorized[column].map(feature => ({
+        ...feature,
+        swipeOrder: newSwipeOrder++
+      }));
+    });
+    
+    setCategorizedFeatures(newCategorized);
+    setDraggedFeature(null);
+    
+    // Reshuffle products after reordering
+    reshuffleProducts();
+  };
+
   const resetApp = () => {
     setCurrentScreen('selection');
     setSelectedProduct(null);
     setCurrentFeatureIndex(0);
-    setCategorizedFeatures({ important: [], notImportant: [], dontCare: [] });
+    setCategorizedFeatures({ important: [], notImportant: [] });
     setAnimatingFeature(null);
     setSwipeOrder(0);
     setSelectedFeatureDetail(null);
@@ -253,58 +316,64 @@ function App() {
               <span>Not Important</span>
             </div>
             <div className="instruction">
-              <span className="arrow">↓</span>
-              <span>Don't Care</span>
-            </div>
-            <div className="instruction">
               <span className="arrow">👆</span>
               <span>Tap to set value</span>
             </div>
           </div>
 
           <div className="categorized-preview">
-            <div className="category important">
+            <div 
+              className={`category important ${dragOverColumn === 'important' ? 'drag-over' : ''}`}
+              onDragOver={(e) => handleDragOver(e, 'important')}
+              onDragLeave={handleDragLeave}
+              onDrop={(e) => handleDrop(e, 'important')}
+            >
               <h4>Important</h4>
               <div className="mini-features">
                 {categorizedFeatures.important
                   .sort((a, b) => a.swipeOrder - b.swipeOrder)
-                  .map((feature) => (
+                  .map((feature, index) => (
                     <div 
                       key={`${feature.id}-${feature.swipeOrder}`} 
-                      className="mini-feature clickable"
-                      onClick={() => handleFeatureClick(feature)}
+                      className="mini-feature clickable draggable"
+                      draggable
+                      onDragStart={(e) => handleDragStart(e, feature, 'important')}
+                      onDragEnd={() => setDraggedFeature(null)}
+                      onClick={(e) => {
+                        // Only handle click if not dragging
+                        if (!draggedFeature) {
+                          handleFeatureClick(feature);
+                        }
+                      }}
                     >
                       {feature.feature}
                     </div>
                   ))}
               </div>
             </div>
-            <div className="category dont-care">
-              <h4>Don't Care</h4>
-              <div className="mini-features">
-                {categorizedFeatures.dontCare
-                  .sort((a, b) => a.swipeOrder - b.swipeOrder)
-                  .map((feature) => (
-                    <div 
-                      key={`${feature.id}-${feature.swipeOrder}`} 
-                      className="mini-feature dont-care clickable"
-                      onClick={() => handleFeatureClick(feature)}
-                    >
-                      {feature.feature}
-                    </div>
-                  ))}
-              </div>
-            </div>
-            <div className="category not-important">
+            <div 
+              className={`category not-important ${dragOverColumn === 'notImportant' ? 'drag-over' : ''}`}
+              onDragOver={(e) => handleDragOver(e, 'notImportant')}
+              onDragLeave={handleDragLeave}
+              onDrop={(e) => handleDrop(e, 'notImportant')}
+            >
               <h4>Not Important</h4>
               <div className="mini-features">
                 {categorizedFeatures.notImportant
                   .sort((a, b) => a.swipeOrder - b.swipeOrder)
-                  .map((feature) => (
+                  .map((feature, index) => (
                     <div 
                       key={`${feature.id}-${feature.swipeOrder}`} 
-                      className="mini-feature not-important clickable"
-                      onClick={() => handleFeatureClick(feature)}
+                      className="mini-feature not-important clickable draggable"
+                      draggable
+                      onDragStart={(e) => handleDragStart(e, feature, 'notImportant')}
+                      onDragEnd={() => setDraggedFeature(null)}
+                      onClick={(e) => {
+                        // Only handle click if not dragging
+                        if (!draggedFeature) {
+                          handleFeatureClick(feature);
+                        }
+                      }}
                     >
                       {feature.feature}
                     </div>
@@ -328,7 +397,11 @@ function App() {
             <h3>Recommended {selectedProduct}s</h3>
             <div className="product-grid">
               {shuffledProducts.slice(0, 6).map((product) => (
-                <ProductCard key={product.id} product={product} />
+                <ProductCard 
+                  key={product.id} 
+                  product={product} 
+                  categorizedFeatures={categorizedFeatures}
+                />
               ))}
             </div>
           </div>
@@ -383,7 +456,75 @@ function App() {
   return null;
 }
 
-function ProductCard({ product }) {
+function ProductCard({ product, categorizedFeatures }) {
+  // Reorder existing specs to prioritize those related to important features
+  const getReorderedSpecs = () => {
+    if (!categorizedFeatures?.important || categorizedFeatures.important.length === 0) {
+      return product.specs.slice(0, 3);
+    }
+    
+    const importantFeatureNames = categorizedFeatures.important
+      .sort((a, b) => a.swipeOrder - b.swipeOrder)
+      .map(f => f.feature.toLowerCase());
+    
+    // Create mapping between feature names and spec patterns
+    const featureToSpecMapping = {
+      // Mobile Phone specs (8 features now covered)
+      'screen size': (spec) => spec.includes('"') || spec.toLowerCase().includes('display'),
+      'battery size': (spec) => spec.toLowerCase().includes('mah'),
+      'operating system': (spec) => spec.toLowerCase().includes('ios') || spec.toLowerCase().includes('android'),
+      'camera quality': (spec) => spec.toLowerCase().includes('mp') || spec.toLowerCase().includes('camera'),
+      'storage space': (spec) => spec.toLowerCase().includes('gb') && !spec.toLowerCase().includes('ram'),
+      'ram': (spec) => spec.toLowerCase().includes('gb ram') || spec.toLowerCase().includes('ram'),
+      'processor speed': (spec) => spec.toLowerCase().includes('snapdragon') || spec.toLowerCase().includes('a17') || spec.toLowerCase().includes('a16') || spec.toLowerCase().includes('tensor') || spec.toLowerCase().includes('bionic'),
+      'water resistance': (spec) => spec.toLowerCase().includes('ip'),
+      
+      // Washing Machine specs (8 features now covered)
+      'load capacity': (spec) => spec.toLowerCase().includes('cu ft') || spec.toLowerCase().includes('kg'),
+      'energy rating': (spec) => spec.toLowerCase().includes('star'),
+      'wash programs': (spec) => spec.toLowerCase().includes('program'),
+      'spin speed': (spec) => spec.toLowerCase().includes('rpm'),
+      'smart features': (spec) => spec.toLowerCase().includes('wifi') || spec.toLowerCase().includes('app') || spec.toLowerCase().includes('voice') || spec.toLowerCase().includes('control'),
+      'quick wash': (spec) => spec.toLowerCase().includes('min quick') || spec.toLowerCase().includes('quick'),
+      'steam function': (spec) => spec.toLowerCase().includes('steam') || spec.toLowerCase().includes('allergy'),
+      'child lock': (spec) => spec.toLowerCase().includes('lock'),
+      
+      // Mobile Charger specs (8 features now covered)
+      'charging speed': (spec) => spec.toLowerCase().includes('w') && !spec.toLowerCase().includes('wireless'),
+      'cable length': (spec) => spec.toLowerCase().includes('m cable') || spec.toLowerCase().includes('cable'),
+      'port count': (spec) => spec.toLowerCase().includes('port'),
+      'safety features': (spec) => spec.toLowerCase().includes('protection') || spec.toLowerCase().includes('control'),
+      'compatibility': (spec) => spec.toLowerCase().includes('usb') || spec.toLowerCase().includes('lightning') || spec.toLowerCase().includes('magsafe') || spec.toLowerCase().includes('pd'),
+      'size & weight': (spec) => spec.toLowerCase().includes('compact') || spec.toLowerCase().includes('large') || spec.toLowerCase().includes('standard') || spec.toLowerCase().includes('ultra'),
+      'wireless charging': (spec) => spec.toLowerCase().includes('wireless'),
+      'led indicator': (spec) => spec.toLowerCase().includes('led'),
+    };
+    
+    const prioritizedSpecs = [];
+    const remainingSpecs = [...product.specs];
+    
+    // Find specs that relate to important features and prioritize them
+    importantFeatureNames.forEach(featureName => {
+      const matcher = featureToSpecMapping[featureName];
+      if (matcher) {
+        for (let i = remainingSpecs.length - 1; i >= 0; i--) {
+          const spec = remainingSpecs[i];
+          if (matcher(spec.toLowerCase())) {
+            prioritizedSpecs.push(spec);
+            remainingSpecs.splice(i, 1);
+            break;
+          }
+        }
+      }
+    });
+    
+    // Add remaining specs and limit to top 3
+    const allSpecs = [...prioritizedSpecs, ...remainingSpecs];
+    return allSpecs.slice(0, 3);
+  };
+
+  const reorderedSpecs = getReorderedSpecs();
+
   return (
     <div className="product-card">
       <div className="product-image">
@@ -397,8 +538,10 @@ function ProductCard({ product }) {
           <span className="rating-number">{product.rating}</span>
         </div>
         <div className="product-specs">
-          {product.specs.map((spec, index) => (
-            <span key={index} className="spec-tag">{spec}</span>
+          {reorderedSpecs.map((spec, index) => (
+            <span key={index} className="spec-tag">
+              {spec}
+            </span>
           ))}
         </div>
         <button className="add-to-cart-btn">Add to Cart</button>
@@ -515,7 +658,7 @@ function FeatureCard({ feature, onSwipe, onFeatureClick, isAnimating = false, an
 
   const handleTouchStart = (e) => {
     if (isAnimating) return; // Don't allow interaction during animation
-    e.preventDefault();
+    // Don't prevent default for better compatibility
     const touch = e.touches[0];
     setStartTouch({
       x: touch.clientX,
@@ -527,7 +670,6 @@ function FeatureCard({ feature, onSwipe, onFeatureClick, isAnimating = false, an
   };
 
   const handleTouchMove = (e) => {
-    e.preventDefault();
     if (!startTouch || !isDragging) return;
     
     const touch = e.touches[0];
@@ -542,7 +684,6 @@ function FeatureCard({ feature, onSwipe, onFeatureClick, isAnimating = false, an
   };
 
   const handleTouchEnd = (e) => {
-    e.preventDefault();
     if (!startTouch || !isDragging) return;
 
     const touch = e.changedTouches[0];
@@ -564,14 +705,9 @@ function FeatureCard({ feature, onSwipe, onFeatureClick, isAnimating = false, an
           // Small movement, treat as tap
           onFeatureClick && onFeatureClick(feature);
         }
-      } else {
-        // Vertical swipe
-        if (deltaY > threshold) {
-          onSwipe('down');
-        } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
-          // Small movement, treat as tap
-          onFeatureClick && onFeatureClick(feature);
-        }
+      } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
+        // Small movement, treat as tap
+        onFeatureClick && onFeatureClick(feature);
       }
     } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
       // Long press or tap with minimal movement
@@ -630,13 +766,9 @@ function FeatureCard({ feature, onSwipe, onFeatureClick, isAnimating = false, an
           // Small movement, treat as click
           onFeatureClick && onFeatureClick(feature);
         }
-      } else {
-        if (deltaY > threshold) {
-          onSwipe('down');
-        } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
-          // Small movement, treat as click
-          onFeatureClick && onFeatureClick(feature);
-        }
+      } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
+        // Small movement, treat as click
+        onFeatureClick && onFeatureClick(feature);
       }
     } else if (Math.abs(deltaX) < 20 && Math.abs(deltaY) < 20) {
       // Long press or click with minimal movement
@@ -654,8 +786,6 @@ function FeatureCard({ feature, onSwipe, onFeatureClick, isAnimating = false, an
     if (Math.abs(x) > Math.abs(y)) {
       if (x > 50) return 'right';
       if (x < -50) return 'left';
-    } else if (y > 50) {
-      return 'down';
     }
     return null;
   };
@@ -702,7 +832,6 @@ function FeatureCard({ feature, onSwipe, onFeatureClick, isAnimating = false, an
         <div className="swipe-indicator">
           {swipeDirection === 'left' && '👍 Important'}
           {swipeDirection === 'right' && '👎 Not Important'}
-          {swipeDirection === 'down' && '🤷 Don\'t Care'}
         </div>
       )}
     </div>

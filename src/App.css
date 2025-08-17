@@ -380,6 +380,33 @@ body {
   transform: scale(1.05);
 }
 
+.mini-feature.draggable {
+  cursor: grab;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.mini-feature.draggable:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mini-feature.draggable:active {
+  cursor: grabbing;
+  transform: scale(0.98);
+}
+
+.category.drag-over {
+  background: rgba(255, 103, 11, 0.1);
+  border: 2px dashed #ff670b;
+  border-radius: 10px;
+}
+
+.category.drag-over .mini-features {
+  background: rgba(255, 103, 11, 0.05);
+  border-radius: 8px;
+}
+
 @keyframes slideInFromTop {
   from {
     transform: translateY(-20px);
